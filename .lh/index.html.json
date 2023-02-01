@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -20,6 +20,30 @@
                 {
                     "date": 1675293967673,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,10 @@\n <!DOCTYPE HTML>\r\n <html>\r\n <head>\r\n-    <title>TOP20 VsExtensions - Luciano</title>\r\n+<title>TOP20 VsExtensions - Luciano</title>\r\n <script>\r\n-      const \r\n+ const \r\n fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },\r\n fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},\r\n fileParse = (data) => { return data\r\n .replace(/&#8202;/gm,\" \")\r\n"
+                },
+                {
+                    "date": 1675294254078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n <html>\r\n <head>\r\n <title>TOP20 VsExtensions - Luciano</title>\r\n <script>\r\n- const \r\n+const \r\n fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },\r\n fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},\r\n fileParse = (data) => { return data\r\n .replace(/&#8202;/gm,\" \")\r\n@@ -66,8 +66,18 @@\n }; fileRead('./FILES.BBS')\r\n </script>\r\n </head>\r\n <body>\r\n-  <div id=\"screen\">\r\n-  </div> \r\n+<div class=\"overlay\"></div>\r\n+  <div class=\"crt-bezel\">\r\n+    <div class=\"crt\">\r\n+  <div class=\"overlay glitch\"></div>\r\n+  \r\n+      <div id=\"screen\" class=\"crt-scan-area\">\r\n+  \r\n+      <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n+  </div></div></div>\r\n+  \r\n+\r\n+\r\n </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1675294260083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,9 +66,11 @@\n }; fileRead('./FILES.BBS')\r\n </script>\r\n </head>\r\n <body>\r\n-<div class=\"overlay\"></div>\r\n+  <div class=\"overlay\">\r\n+\r\n+  </div>\r\n   <div class=\"crt-bezel\">\r\n     <div class=\"crt\">\r\n   <div class=\"overlay glitch\"></div>\r\n   \r\n"
+                },
+                {
+                    "date": 1675294273769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -67,13 +67,13 @@\n </script>\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n-\r\n   </div>\r\n   <div class=\"crt-bezel\">\r\n     <div class=\"crt\">\r\n-  <div class=\"overlay glitch\"></div>\r\n+      <div class=\"overlay glitch\">        \r\n+      </div>\r\n   \r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n   \r\n       <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n"
+                },
+                {
+                    "date": 1675294286667,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,11 +72,10 @@\n   <div class=\"crt-bezel\">\r\n     <div class=\"crt\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n-  \r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n-  \r\n+\r\n       <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n   </div></div></div>\r\n   \r\n \r\n"
+                },
+                {
+                    "date": 1675294338361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -73,12 +73,12 @@\n     <div class=\"crt\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n+        <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n+      </div>\r\n+    </div>\r\n+  </div>\r\n \r\n-      <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n-  </div></div></div>\r\n-  \r\n \r\n-\r\n </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1675294408985,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,6 @@\n         <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n       </div>\r\n     </div>\r\n   </div>\r\n-\r\n-\r\n </body>\r\n </html>\r\n"
                 }
             ],
             "date": 1675293691270,
