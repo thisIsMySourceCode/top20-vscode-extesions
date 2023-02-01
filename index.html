@@ -1,15 +1,30 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Top20: VSCode Extensions - Luciano Pereira (CSS Experiment)</title>
+    <title>TOP20 VsExtensions - Luciano</title>
 </head>
 <body>
 <script>
-  fetch('./FILES.BBS')
+
+const 
+ readFile = (url) => {
+  fetch(url)
+  .then(response => response.text())
+  .then((data) => {
+   return data
+  })
+ },
+ data = readFile('./FILES.BBS')
+
+ console.log(data);
+
+
+/*
+fetch('./FILES.BBS')
   .then(response => response.text())
   .then((data) => {
     console.log(data)
-  })
+  })*/
 </script>
 </body>
 </html>
