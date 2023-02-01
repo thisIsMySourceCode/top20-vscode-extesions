@@ -2,37 +2,10 @@
 <html>
 <head>
     <title>TOP20 VsExtensions - Luciano</title>
+    <script src="filesbbs.js"></script>
 </head>
 <body>
-<script>
-
-
-const 
-getFile =
-async (url) => {
-  return fetch(url)
-  .then ( response => response.text() )
-  .then ( (data) => {
-    return data
-  })
-}
-       
-const readFile = async (url) => {
-    const file = await this.getFile(url);  
-    console.log(file);            
-}
-
-
-
-readFile('./FILES.BBS');
-
-
-/*
-fetch('./FILES.BBS')
-  .then(response => response.text())
-  .then((data) => {
-    console.log(data)
-  })*/
-</script>
+  <div id="screen">
+  </div> 
 </body>
 </html>
