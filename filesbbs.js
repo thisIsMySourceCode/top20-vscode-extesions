@@ -58,4 +58,4 @@ fileRender = (data) => { data = fileParse(data)
      }
    })
    observer.observe(document, {childList: true, subtree: true })
-}; fileRead('./files.bbs')
+}; fileRead('./FILES.BBS')
