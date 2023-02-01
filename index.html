@@ -6,17 +6,25 @@
 <body>
 <script>
 
-const 
- readFile = async (url) => {
-  fetch(url)
-  .then(response => response.text())
-  .then((data) => {
-   return data
-  })
- },
- data = readFile('./FILES.BBS')
 
- console.log(data);
+const 
+getFile =
+async (url) => {
+  return fetch(url)
+  .then ( response => response.text() )
+  .then ( (data) => {
+    return data
+  })
+}
+       
+const readFile = async (url) => {
+    const file = await this.getFile(url);  
+    console.log(file);            
+}
+
+
+
+readFile('./FILES.BBS');
 
 
 /*
