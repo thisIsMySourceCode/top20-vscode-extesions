@@ -1,0 +1,18 @@
+{
+    "sourceFile": "index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1675293691270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1675293691270,
+            "name": "Commit-0",
+            "content": "<!DOCTYPE HTML>\r\n<html>\r\n<head>\r\n    <title>TOP20 VsExtensions - Luciano</title>\r\n    <script src=\"./filesbbs.js\"></script>\r\n</head>\r\n<body>\r\n  <div id=\"screen\">\r\n  </div> \r\n</body>\r\n</html>\r\n"
+        }
+    ]
+}
