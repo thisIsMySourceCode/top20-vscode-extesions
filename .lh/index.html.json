@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -44,6 +44,22 @@
                 {
                     "date": 1675294408985,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,8 +77,6 @@\n         <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n       </div>\r\n     </div>\r\n   </div>\r\n-\r\n-\r\n </body>\r\n </html>\r\n"
+                },
+                {
+                    "date": 1675295090145,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,8 +64,9 @@\n    })\r\n    observer.observe(document, {childList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\r\n </script>\r\n+<style></style>\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1675295204363,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n    })\r\n    observer.observe(document, {childList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\r\n </script>\r\n-<style></style>\r\n+<link rel=\"stylesheet\" href=\"style.css\" media=\"print\" onload=\"this.media='all'\">\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1675295218718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,9 +64,9 @@\n    })\r\n    observer.observe(document, {childList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\r\n </script>\r\n-<link rel=\"stylesheet\" href=\"style.css\" media=\"print\" onload=\"this.media='all'\">\r\n+<link rel=\"stylesheet\" href=\"./style.css\" media=\"print\" onload=\"this.media='all'\">\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1675295299141,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,9 @@\n     <div class=\"crt\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n-        <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"> « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » </a> \r\n+        <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n       </div>\r\n     </div>\r\n   </div>\r\n </body>\r\n"
                 }
             ],
             "date": 1675293691270,
