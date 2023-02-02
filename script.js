@@ -55,4 +55,8 @@ fileRender = (data) => {
       i++
     }
   }
-};fileRead('./FILES.BBS')
+},color = (color) => {
+const 
+id = document.getElementById('color')
+id.className = "crt " + color
+}; fileRead('./FILES.BBS')
