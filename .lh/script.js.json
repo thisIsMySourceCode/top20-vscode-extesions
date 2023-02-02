@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1675350563535,
@@ -12,6 +12,14 @@
                 {
                     "date": 1675351676417,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n+console.log(data);\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n      id = document.getElementById('screen');\r\n      if (id) {\r\n"
+                },
+                {
+                    "date": 1675351864535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\r\n const \r\n fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },\r\n fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},\r\n fileParse = (data) => { return data\r\n@@ -36,9 +37,8 @@\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n-console.log(data);\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n      id = document.getElementById('screen');\r\n      if (id) {\r\n"
+                },
+                {
+                    "date": 1675351870929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,10 @@\n  ||   a[keya].localeCompare(b[keyb])\r\n })\r\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n+    console.log(data);\r\n+\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n"
                 }
             ],
             "date": 1675350563535,

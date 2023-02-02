@@ -1,3 +1,4 @@
+
 const 
 fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },
 fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},
@@ -35,9 +36,9 @@ fileParse = (data) => { return data
 })
 },
 fileRender = (data) => { data = fileParse(data)
+   console.log(data);
    const 
    url = 'https://marketplace.visualstudio.com/items?itemName=',
-console.log(data);
    observer = new MutationObserver((mutations, obs) => {
      const 
      id = document.getElementById('screen');
