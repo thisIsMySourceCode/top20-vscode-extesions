@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 7,
+            "activePatchIndex": 75,
             "patches": [
                 {
                     "date": 1675295036551,
@@ -36,6 +36,278 @@
                 {
                     "date": 1675295886904,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n #contact:after {\r\n content:' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n #contact:hover:after{\r\n-content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. » '\r\n+content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n \r\n * {\r\n     margin: 0;\r\n"
+                },
+                {
+                    "date": 1675339014598,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,10 +4,9 @@\n #contact:hover:after{\r\n content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n \r\n-* {\r\n-    margin: 0;\r\n+* { margin: 0;\r\n     padding: 0;\r\n   }\r\n   \r\n   body {\r\n"
+                },
+                {
+                    "date": 1675339029035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,10 +3,9 @@\n }\r\n #contact:hover:after{\r\n content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n-\r\n-* { margin: 0;\r\n+* {  margin: 0;\r\n     padding: 0;\r\n   }\r\n   \r\n   body {\r\n"
+                },
+                {
+                    "date": 1675339034545,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,11 +5,10 @@\n content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n * {  margin: 0;\r\n     padding: 0;\r\n-  }\r\n-  \r\n-  body {\r\n+}\r\n+body {\r\n   display:flex;\r\n   flex-flow: column; height: 100vh; \r\n   justify-content: space-around;\r\n   background-color:#1B1B1B;\r\n"
+                },
+                {
+                    "date": 1675339048532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,13 +4,12 @@\n #contact:hover:after{\r\n content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n * {  margin: 0;\r\n-    padding: 0;\r\n+         padding: 0;\r\n }\r\n-body {\r\n-  display:flex;\r\n-  flex-flow: column; height: 100vh; \r\n+body {    display:flex;\r\n+       flex-flow: column; height: 100vh; \r\n   justify-content: space-around;\r\n   background-color:#1B1B1B;\r\n   \r\n   \r\n"
+                },
+                {
+                    "date": 1675339067304,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,14 +4,15 @@\n #contact:hover:after{\r\n content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n * {  margin: 0;\r\n-         padding: 0;\r\n+          padding: 0;\r\n }\r\n-body {    display:flex;\r\n-       flex-flow: column; height: 100vh; \r\n+body {    display: flex;\r\n+        flex-flow: column; \r\n+           height: 100vh; \r\n   justify-content: space-around;\r\n-  background-color:#1B1B1B;\r\n+ background-color:#1B1B1B;\r\n   \r\n   \r\n   \r\n   /*\r\n"
+                },
+                {
+                    "date": 1675339083918,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,24 +10,12 @@\n body {    display: flex;\r\n         flex-flow: column; \r\n            height: 100vh; \r\n   justify-content: space-around;\r\n- background-color:#1B1B1B;\r\n+ background-color: #1B1B1B;\r\n   \r\n   \r\n   \r\n-  /*\r\n-  background: linear-gradient(180deg, #4b6cb7 0%, #182848 100%);\r\n-  background: linear-gradient(180deg, #221100 0%, #664400 100%);\r\n-  background: linear-gradient(180deg, #FC466B 0%, #3F5EFB 100%);\r\n-  background: linear-gradient(90deg, #d53369 0%, #daae51 100%);\r\n-  \r\n-  \r\n-    background: linear-gradient(180deg, #2b1165 0%, #1a3a82 37%, #ab24b1 69%, #f54171 100%);\r\n-  \r\n-  */\r\n-  \r\n-  \r\n   }\r\n   \r\n   \r\n   \r\n"
+                },
+                {
+                    "date": 1675339089845,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,15 +11,12 @@\n         flex-flow: column; \r\n            height: 100vh; \r\n   justify-content: space-around;\r\n  background-color: #1B1B1B;\r\n+}\r\n   \r\n   \r\n   \r\n-  }\r\n-  \r\n-  \r\n-  \r\n   .overlay {\r\n     display: block;\r\n     position: absolute;\r\n     top: 0;\r\n"
+                },
+                {
+                    "date": 1675339099957,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,11 +12,10 @@\n            height: 100vh; \r\n   justify-content: space-around;\r\n  background-color: #1B1B1B;\r\n }\r\n+ \r\n   \r\n-  \r\n-  \r\n   .overlay {\r\n     display: block;\r\n     position: absolute;\r\n     top: 0;\r\n"
+                },
+                {
+                    "date": 1675339112201,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,11 @@\n #contact:after {\r\n content:' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n #contact:hover:after{\r\n-content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n+          content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n-* {  margin: 0;\r\n+* {        margin: 0;\r\n           padding: 0;\r\n }\r\n body {    display: flex;\r\n         flex-flow: column; \r\n"
+                },
+                {
+                    "date": 1675339119031,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n #contact:after {\r\n-content:' « Luciano Pereira B.B.S. »\\00a0'\r\n+          content:' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n #contact:hover:after{\r\n           content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n"
+                },
+                {
+                    "date": 1675339141065,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-#contact:after {\r\n-          content:' « Luciano Pereira B.B.S. »\\00a0'\r\n+         #contact:after {\r\n+          content: ' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n-#contact:hover:after{\r\n+   #contact:hover:after{\r\n           content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n * {        margin: 0;\r\n           padding: 0;\r\n"
+                },
+                {
+                    "date": 1675339147608,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-         #contact:after {\r\n+contact:after {\r\n           content: ' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n    #contact:hover:after{\r\n           content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n"
+                },
+                {
+                    "date": 1675339170396,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n-contact:after {\r\n+#contact:after {\r\n           content: ' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n-   #contact:hover:after{\r\n+#contact:hover:after{\r\n           content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n * {        margin: 0;\r\n           padding: 0;\r\n@@ -12,11 +12,9 @@\n            height: 100vh; \r\n   justify-content: space-around;\r\n  background-color: #1B1B1B;\r\n }\r\n- \r\n-  \r\n-  .overlay {\r\n+.overlay {\r\n     display: block;\r\n     position: absolute;\r\n     top: 0;\r\n     left: 0;\r\n"
+                },
+                {
+                    "date": 1675339188866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,12 +13,12 @@\n   justify-content: space-around;\r\n  background-color: #1B1B1B;\r\n }\r\n .overlay {\r\n-    display: block;\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n+          display: block;\r\n+         position: absolute;\r\n+              top: 0;\r\n+             left: 0;\r\n     width: 100vw;\r\n     height: 100vh;\r\n     background-color: transparent;\r\n     background-size: 5px 5px, 5px 5px;\r\n"
+                },
+                {
+                    "date": 1675339202025,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,11 +17,11 @@\n           display: block;\r\n          position: absolute;\r\n               top: 0;\r\n              left: 0;\r\n-    width: 100vw;\r\n-    height: 100vh;\r\n-    background-color: transparent;\r\n+            width: 100vw;\r\n+           height: 100vh;\r\n+ background-color: transparent;\r\n     background-size: 5px 5px, 5px 5px;\r\n     background-position: -1px -1px, -1px -1px;\r\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n     mix-blend-mode: difference;\r\n"
+                },
+                {
+                    "date": 1675339208050,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,10 +20,10 @@\n              left: 0;\r\n             width: 100vw;\r\n            height: 100vh;\r\n  background-color: transparent;\r\n-    background-size: 5px 5px, 5px 5px;\r\n-    background-position: -1px -1px, -1px -1px;\r\n+  background-size: 5px 5px, 5px 5px;\r\n+background-position: -1px -1px, -1px -1px;\r\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n     mix-blend-mode: difference;\r\n   }\r\n   \r\n"
+                },
+                {
+                    "date": 1675339223066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,15 +14,15 @@\n  background-color: #1B1B1B;\r\n }\r\n .overlay {\r\n           display: block;\r\n-         position: absolute;\r\n-              top: 0;\r\n-             left: 0;\r\n-            width: 100vw;\r\n-           height: 100vh;\r\n- background-color: transparent;\r\n-  background-size: 5px 5px, 5px 5px;\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+               width: 100vw;\r\n+              height: 100vh;\r\n+    background-color: transparent;\r\n+     background-size: 5px 5px, 5px 5px;\r\n background-position: -1px -1px, -1px -1px;\r\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n     mix-blend-mode: difference;\r\n   }\r\n"
+                },
+                {
+                    "date": 1675339230627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,12 +10,12 @@\n body {    display: flex;\r\n         flex-flow: column; \r\n            height: 100vh; \r\n   justify-content: space-around;\r\n- background-color: #1B1B1B;\r\n+    background-color: #1B1B1B;\r\n }\r\n .overlay {\r\n-          display: block;\r\n+             display: block;\r\n             position: absolute;\r\n                  top: 0;\r\n                 left: 0;\r\n                width: 100vw;\r\n"
+                },
+                {
+                    "date": 1675339254776,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,10 +8,10 @@\n           padding: 0;\r\n }\r\n body {    display: flex;\r\n         flex-flow: column; \r\n-           height: 100vh; \r\n-  justify-content: space-around;\r\n+              height: 100vh; \r\n+     justify-content: space-around;\r\n     background-color: #1B1B1B;\r\n }\r\n .overlay {\r\n              display: block;\r\n"
+                },
+                {
+                    "date": 1675339261721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,10 +6,10 @@\n }\r\n * {        margin: 0;\r\n           padding: 0;\r\n }\r\n-body {    display: flex;\r\n-        flex-flow: column; \r\n+body {       display: flex;\r\n+           flex-flow: column; \r\n               height: 100vh; \r\n      justify-content: space-around;\r\n     background-color: #1B1B1B;\r\n }\r\n"
+                },
+                {
+                    "date": 1675339294506,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,12 @@\n #contact:after {\r\n-          content: ' « Luciano Pereira B.B.S. »\\00a0'\r\n+             content: ' « Luciano Pereira B.B.S. »\\00a0'\r\n }\r\n #contact:hover:after{\r\n-          content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n+             content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n-* {        margin: 0;\r\n-          padding: 0;\r\n+* {           margin: 0;\r\n+             padding: 0;\r\n }\r\n body {       display: flex;\r\n            flex-flow: column; \r\n               height: 100vh; \r\n@@ -21,12 +21,12 @@\n                width: 100vw;\r\n               height: 100vh;\r\n     background-color: transparent;\r\n      background-size: 5px 5px, 5px 5px;\r\n-background-position: -1px -1px, -1px -1px;\r\n+ background-position: -1px -1px, -1px -1px;\r\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n-    mix-blend-mode: difference;\r\n-  }\r\n+      mix-blend-mode: difference;\r\n+}\r\n   \r\n   \r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n"
+                },
+                {
+                    "date": 1675339363400,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,13 @@\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n       mix-blend-mode: difference;\r\n }\r\n   \r\n+\r\n+\r\n+\r\n+\r\n   \r\n-  \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n    *\r\n@@ -62,9 +65,8 @@\n     position: relative;\r\n     margin: 0 auto;\r\n     box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n     border-radius: 1.33333em;\r\n-    background: #85856C;\r\n     background: #B5B59A;\r\n     overflow: hidden;\r\n     font-size: clamp(6px, 1.5vw, 20px);\r\n     line-height: 1.33333;\r\n"
+                },
+                {
+                    "date": 1675339378138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,8 +26,19 @@\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n       mix-blend-mode: difference;\r\n }\r\n   \r\n+.crt-bezel {\r\n+  display: inline-block;\r\n+  position: relative;\r\n+  margin: 0 auto;\r\n+  box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n+  border-radius: 1.33333em;\r\n+  background: #B5B59A;\r\n+  overflow: hidden;\r\n+  font-size: clamp(6px, 1.5vw, 20px);\r\n+  line-height: 1.33333;\r\n+}\r\n \r\n \r\n \r\n \r\n@@ -59,19 +70,8 @@\n    * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\n    * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n    */\r\n   /* With simplifications and modifications by Robert Bottomley. */\r\n-  .crt-bezel {\r\n-    display: inline-block;\r\n-    position: relative;\r\n-    margin: 0 auto;\r\n-    box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n-    border-radius: 1.33333em;\r\n-    background: #B5B59A;\r\n-    overflow: hidden;\r\n-    font-size: clamp(6px, 1.5vw, 20px);\r\n-    line-height: 1.33333;\r\n-  }\r\n   .crt-bezel:before {\r\n     content: \"\";\r\n     position: absolute;\r\n     top: 0;\r\n"
+                },
+                {
+                    "date": 1675339387174,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,9 +25,8 @@\n  background-position: -1px -1px, -1px -1px;\r\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n       mix-blend-mode: difference;\r\n }\r\n-  \r\n .crt-bezel {\r\n   display: inline-block;\r\n   position: relative;\r\n   margin: 0 auto;\r\n"
+                },
+                {
+                    "date": 1675339395816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n     background-image: linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);\r\n       mix-blend-mode: difference;\r\n }\r\n .crt-bezel {\r\n-  display: inline-block;\r\n-  position: relative;\r\n+             display: inline-block;\r\n+            position: relative;\r\n   margin: 0 auto;\r\n   box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n   border-radius: 1.33333em;\r\n   background: #B5B59A;\r\n"
+                },
+                {
+                    "date": 1675339403902,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,10 +28,10 @@\n }\r\n .crt-bezel {\r\n              display: inline-block;\r\n             position: relative;\r\n-  margin: 0 auto;\r\n-  box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n+              margin: 0 auto;\r\n+          box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n   border-radius: 1.33333em;\r\n   background: #B5B59A;\r\n   overflow: hidden;\r\n   font-size: clamp(6px, 1.5vw, 20px);\r\n"
+                },
+                {
+                    "date": 1675339429805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,18 +30,17 @@\n              display: inline-block;\r\n             position: relative;\r\n               margin: 0 auto;\r\n           box-shadow: inset 0 0 1px 0.66667em #F5F5DC;\r\n-  border-radius: 1.33333em;\r\n-  background: #B5B59A;\r\n-  overflow: hidden;\r\n-  font-size: clamp(6px, 1.5vw, 20px);\r\n-  line-height: 1.33333;\r\n+       border-radius: 1.33333em;\r\n+          background: #B5B59A;\r\n+            overflow: hidden;\r\n+           font-size: clamp(6px, 1.5vw, 20px);\r\n+         line-height: 1.33333;\r\n }\r\n \r\n \r\n \r\n-\r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n"
+                },
+                {
+                    "date": 1675339533388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,11 +36,35 @@\n             overflow: hidden;\r\n            font-size: clamp(6px, 1.5vw, 20px);\r\n          line-height: 1.33333;\r\n }\r\n+.crt-bezel:before {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 0;\r\n+  left: 0;\r\n+  right: 0;\r\n+  bottom: 0;\r\n+  z-index: 2;\r\n+  background: linear-gradient(135deg, rgba(52, 52, 52, 0.5) 0%, rgba(252, 252, 252, 0.55) 19%, rgba(1, 1, 1, 0.64) 50%, rgba(100, 100, 100, 0.69) 69%, rgba(51, 51, 51, 0.73) 84%, rgba(22, 22, 22, 0.76) 93%, rgba(27, 27, 27, 0.78) 100%);\r\n+  opacity: 0.5;\r\n+}\r\n+.crt-bezel:after {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 0;\r\n+  left: 0;\r\n+  right: 0;\r\n+  bottom: 0;\r\n+  z-index: 1;\r\n+  background-color: #ddd;\r\n+  opacity: 0.1;\r\n+}\r\n \r\n \r\n \r\n+\r\n+\r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n@@ -68,30 +92,8 @@\n    * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\n    * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n    */\r\n   /* With simplifications and modifications by Robert Bottomley. */\r\n-  .crt-bezel:before {\r\n-    content: \"\";\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n-    right: 0;\r\n-    bottom: 0;\r\n-    z-index: 2;\r\n-    background: linear-gradient(135deg, rgba(52, 52, 52, 0.5) 0%, rgba(252, 252, 252, 0.55) 19%, rgba(1, 1, 1, 0.64) 50%, rgba(100, 100, 100, 0.69) 69%, rgba(51, 51, 51, 0.73) 84%, rgba(22, 22, 22, 0.76) 93%, rgba(27, 27, 27, 0.78) 100%);\r\n-    opacity: 0.5;\r\n-  }\r\n-  .crt-bezel:after {\r\n-    content: \"\";\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n-    right: 0;\r\n-    bottom: 0;\r\n-    z-index: 1;\r\n-    background-color: #ddd;\r\n-    opacity: 0.1;\r\n-  }\r\n   \r\n   .crt {\r\n     position: relative;\r\n     margin: 1.66667em;\r\n"
+                },
+                {
+                    "date": 1675339628629,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,12 +3,14 @@\n }\r\n #contact:hover:after{\r\n              content:' « Lµ¢iªn0 pӖЯӖ|₹Â B.B.S. »\\00a0'\r\n }\r\n-* {           margin: 0;\r\n+* {    \r\n+              margin: 0;\r\n              padding: 0;\r\n }\r\n-body {       display: flex;\r\n+body {\r\n+              display: flex;\r\n            flex-flow: column; \r\n               height: 100vh; \r\n      justify-content: space-around;\r\n     background-color: #1B1B1B;\r\n@@ -37,25 +39,25 @@\n            font-size: clamp(6px, 1.5vw, 20px);\r\n          line-height: 1.33333;\r\n }\r\n .crt-bezel:before {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  top: 0;\r\n-  left: 0;\r\n-  right: 0;\r\n-  bottom: 0;\r\n-  z-index: 2;\r\n-  background: linear-gradient(135deg, rgba(52, 52, 52, 0.5) 0%, rgba(252, 252, 252, 0.55) 19%, rgba(1, 1, 1, 0.64) 50%, rgba(100, 100, 100, 0.69) 69%, rgba(51, 51, 51, 0.73) 84%, rgba(22, 22, 22, 0.76) 93%, rgba(27, 27, 27, 0.78) 100%);\r\n-  opacity: 0.5;\r\n+             content: \"\";\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+               right: 0;\r\n+              bottom: 0;\r\n+             z-index: 2;\r\n+          background: linear-gradient(135deg, rgba(52, 52, 52, 0.5) 0%, rgba(252, 252, 252, 0.55) 19%, rgba(1, 1, 1, 0.64) 50%, rgba(100, 100, 100, 0.69) 69%, rgba(51, 51, 51, 0.73) 84%, rgba(22, 22, 22, 0.76) 93%, rgba(27, 27, 27, 0.78) 100%);\r\n+             opacity: 0.5;\r\n }\r\n .crt-bezel:after {\r\n-  content: \"\";\r\n-  position: absolute;\r\n-  top: 0;\r\n-  left: 0;\r\n-  right: 0;\r\n-  bottom: 0;\r\n+             content: \"\";\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+               right: 0;\r\n+              bottom: 0;\r\n   z-index: 1;\r\n   background-color: #ddd;\r\n   opacity: 0.1;\r\n }\r\n"
+                },
+                {
+                    "date": 1675339635872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,10 +56,10 @@\n                  top: 0;\r\n                 left: 0;\r\n                right: 0;\r\n               bottom: 0;\r\n-  z-index: 1;\r\n-  background-color: #ddd;\r\n+             z-index: 1;\r\n+    background-color: #ddd;\r\n   opacity: 0.1;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675339661299,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n                right: 0;\r\n               bottom: 0;\r\n              z-index: 1;\r\n     background-color: #ddd;\r\n-  opacity: 0.1;\r\n+             opacity: 0.1;\r\n }\r\n \r\n \r\n \r\n@@ -95,17 +95,8 @@\n    * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n    */\r\n   /* With simplifications and modifications by Robert Bottomley. */\r\n   \r\n-  .crt {\r\n-    position: relative;\r\n-    margin: 1.66667em;\r\n-    border-radius: 1.33333em;\r\n-    box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n-    background: #141414;\r\n-    overflow: hidden;\r\n-    z-index: 3;\r\n-  }\r\n   .crt:before {\r\n     content: \"\";\r\n     position: absolute;\r\n     top: 0;\r\n"
+                },
+                {
+                    "date": 1675339666663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,17 @@\n              z-index: 1;\r\n     background-color: #ddd;\r\n              opacity: 0.1;\r\n }\r\n+.crt {\r\n+  position: relative;\r\n+  margin: 1.66667em;\r\n+  border-radius: 1.33333em;\r\n+  box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n+  background: #141414;\r\n+  overflow: hidden;\r\n+  z-index: 3;\r\n+}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675339682932,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,10 +61,10 @@\n     background-color: #ddd;\r\n              opacity: 0.1;\r\n }\r\n .crt {\r\n-  position: relative;\r\n-  margin: 1.66667em;\r\n+            position: relative;\r\n+              margin: 1.66667em;\r\n   border-radius: 1.33333em;\r\n   box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n   background: #141414;\r\n   overflow: hidden;\r\n"
+                },
+                {
+                    "date": 1675339695351,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -63,11 +63,11 @@\n }\r\n .crt {\r\n             position: relative;\r\n               margin: 1.66667em;\r\n-  border-radius: 1.33333em;\r\n-  box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n-  background: #141414;\r\n+       border-radius: 1.33333em;\r\n+          box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n+          background: #141414;\r\n   overflow: hidden;\r\n   z-index: 3;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1675339722273,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -66,10 +66,10 @@\n               margin: 1.66667em;\r\n        border-radius: 1.33333em;\r\n           box-shadow: 0 0 1px 3px rgba(10, 10, 10, 0.7);\r\n           background: #141414;\r\n-  overflow: hidden;\r\n-  z-index: 3;\r\n+            overflow: hidden;\r\n+             z-index: 3;\r\n }\r\n \r\n \r\n \r\n@@ -156,21 +156,8 @@\n   }\r\n   \r\n   \r\n   \r\n-  .crt-scan-area::before {\r\n-    content: \" \";\r\n-    display: block;\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n-    bottom: 0;\r\n-    right: 0;\r\n-    background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n-    z-index: 2;\r\n-    background-size: 100% 2px, 3px 100%;\r\n-    pointer-events: none;\r\n-  }\r\n   \r\n   \r\n   \r\n   .glitch {\r\n"
+                },
+                {
+                    "date": 1675339728682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,8 +69,21 @@\n           background: #141414;\r\n             overflow: hidden;\r\n              z-index: 3;\r\n }\r\n+.crt-scan-area::before {\r\n+  content: \" \";\r\n+  display: block;\r\n+  position: absolute;\r\n+  top: 0;\r\n+  left: 0;\r\n+  bottom: 0;\r\n+  right: 0;\r\n+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n+  z-index: 2;\r\n+  background-size: 100% 2px, 3px 100%;\r\n+  pointer-events: none;\r\n+}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675339759627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,16 +70,16 @@\n             overflow: hidden;\r\n              z-index: 3;\r\n }\r\n .crt-scan-area::before {\r\n-  content: \" \";\r\n-  display: block;\r\n-  position: absolute;\r\n-  top: 0;\r\n-  left: 0;\r\n-  bottom: 0;\r\n-  right: 0;\r\n-  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n+             content: \" \";\r\n+             display: block;\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+              bottom: 0;\r\n+               right: 0;\r\n+          background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n   z-index: 2;\r\n   background-size: 100% 2px, 3px 100%;\r\n   pointer-events: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1675339766677,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -78,10 +78,10 @@\n                 left: 0;\r\n               bottom: 0;\r\n                right: 0;\r\n           background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n-  z-index: 2;\r\n-  background-size: 100% 2px, 3px 100%;\r\n+             z-index: 2;\r\n+     background-size: 100% 2px, 3px 100%;\r\n   pointer-events: none;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675339788252,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n                right: 0;\r\n           background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n-  pointer-events: none;\r\n+      pointer-events: none;\r\n }\r\n \r\n \r\n \r\n@@ -172,13 +172,8 @@\n   \r\n   \r\n   \r\n   \r\n-  .glitch {\r\n-    clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n-    animation: glitch 10s linear infinite;\r\n-    transform: translatex(0.1rem);\r\n-  }\r\n   \r\n   @keyframes glitch {\r\n     to {\r\n       clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n"
+                },
+                {
+                    "date": 1675339796066,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,13 @@\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n+.glitch {\r\n+  clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n+  animation: glitch 10s linear infinite;\r\n+  transform: translatex(0.1rem);\r\n+}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675339831899,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,11 +83,11 @@\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n .glitch {\r\n-  clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n-  animation: glitch 10s linear infinite;\r\n-  transform: translatex(0.1rem);\r\n+           clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n+           animation: glitch 10s linear infinite;\r\n+           transform: translatex(0.1rem);\r\n }\r\n \r\n \r\n \r\n@@ -178,13 +178,8 @@\n   \r\n   \r\n   \r\n   \r\n-  @keyframes glitch {\r\n-    to {\r\n-      clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n-    }\r\n-  }\r\n   \r\n   \r\n   a,a:visited {\r\n     font-style: normal;\r\n"
+                },
+                {
+                    "date": 1675339841193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -87,8 +87,13 @@\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n }\r\n+@keyframes glitch {\r\n+  to {\r\n+    clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n+  }\r\n+}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675340314599,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -89,16 +89,32 @@\n            transform: translatex(0.1rem);\r\n }\r\n @keyframes glitch {\r\n   to {\r\n-    clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n+           clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n   }\r\n }\r\n \r\n+.crt:before {\r\n+  content: \"\";\r\n+  position: absolute;\r\n+  top: 0;\r\n+  left: 0;\r\n+  bottom: 0;\r\n+  right: 0;\r\n+  box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n+  border-radius: 1.33333em;\r\n \r\n+  background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+  background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+  background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n \r\n \r\n+  z-index: -1;\r\n+}\r\n \r\n+\r\n+\r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n"
+                },
+                {
+                    "date": 1675340321177,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,14 +102,8 @@\n   bottom: 0;\r\n   right: 0;\r\n   box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n   border-radius: 1.33333em;\r\n-\r\n-  background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-  background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-  background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-\r\n-\r\n   z-index: -1;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675340327846,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n   }\r\n }\r\n \r\n .crt:before {\r\n-  content: \"\";\r\n+             content: \"\";\r\n   position: absolute;\r\n   top: 0;\r\n   left: 0;\r\n   bottom: 0;\r\n"
+                },
+                {
+                    "date": 1675340367481,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -90,20 +90,20 @@\n }\r\n @keyframes glitch {\r\n   to {\r\n            clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n-  }\r\n-}\r\n-\r\n+  }                   \r\n+}                     \r\n+                       \r\n .crt:before {\r\n              content: \"\";\r\n-  position: absolute;\r\n-  top: 0;\r\n-  left: 0;\r\n-  bottom: 0;\r\n-  right: 0;\r\n-  box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n-  border-radius: 1.33333em;\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+              bottom: 0;\r\n+               right: 0;\r\n+          box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n+       border-radius: 1.33333em;\r\n   z-index: -1;\r\n }\r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675340380356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,9 +102,9 @@\n               bottom: 0;\r\n                right: 0;\r\n           box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n        border-radius: 1.33333em;\r\n-  z-index: -1;\r\n+             z-index: -1;\r\n }\r\n \r\n \r\n \r\n@@ -138,17 +138,8 @@\n    */\r\n   /* With simplifications and modifications by Robert Bottomley. */\r\n   \r\n   .crt:before {\r\n-    content: \"\";\r\n-    position: absolute;\r\n-    top: 0;\r\n-    left: 0;\r\n-    bottom: 0;\r\n-    right: 0;\r\n-    box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n-    border-radius: 1.33333em;\r\n-  \r\n     background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n   \r\n"
+                },
+                {
+                    "date": 1675340386878,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -141,11 +141,8 @@\n   .crt:before {\r\n     background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-  \r\n-  \r\n-    z-index: -1;\r\n   }\r\n   \r\n   .crt-scan-area {\r\n     width: 80ch;\r\n"
+                },
+                {
+                    "date": 1675340406565,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,11 +104,31 @@\n           box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n        border-radius: 1.33333em;\r\n              z-index: -1;\r\n }\r\n+.crt-scan-area {\r\n+  width: 80ch;\r\n+  max-width: 80ch;\r\n \r\n+  height: 31.99992em;\r\n+  margin: 2.66667em;\r\n+  overflow-y: hidden;\r\n+  white-space: pre-wrap;\r\n+  font-family: monospace;\r\n \r\n+  color: #cce;\r\n+  color: #3f3;\r\n+  color: #ffb000;\r\n \r\n+  text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);\r\n+  text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);\r\n+  text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);\r\n+\r\n+\r\n+}\r\n+\r\n+\r\n+\r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n"
+                },
+                {
+                    "date": 1675340418119,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -107,24 +107,16 @@\n }\r\n .crt-scan-area {\r\n   width: 80ch;\r\n   max-width: 80ch;\r\n-\r\n   height: 31.99992em;\r\n   margin: 2.66667em;\r\n   overflow-y: hidden;\r\n   white-space: pre-wrap;\r\n   font-family: monospace;\r\n \r\n-  color: #cce;\r\n-  color: #3f3;\r\n-  color: #ffb000;\r\n \r\n-  text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);\r\n-  text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);\r\n-  text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);\r\n \r\n-\r\n }\r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675340433072,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,11 +112,8 @@\n   margin: 2.66667em;\r\n   overflow-y: hidden;\r\n   white-space: pre-wrap;\r\n   font-family: monospace;\r\n-\r\n-\r\n-\r\n }\r\n \r\n \r\n \r\n@@ -156,26 +153,16 @@\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n   }\r\n   \r\n   .crt-scan-area {\r\n-    width: 80ch;\r\n-    max-width: 80ch;\r\n-  \r\n-    height: 31.99992em;\r\n-    margin: 2.66667em;\r\n-    overflow-y: hidden;\r\n-    white-space: pre-wrap;\r\n-    font-family: monospace;\r\n-  \r\n     color: #cce;\r\n     color: #3f3;\r\n     color: #ffb000;\r\n   \r\n     text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);\r\n     text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);\r\n     text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);\r\n-  \r\n-  \r\n+ \r\n   }\r\n   \r\n   \r\n   .crt-scan-area em {\r\n"
+                },
+                {
+                    "date": 1675340467762,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -103,15 +103,15 @@\n                right: 0;\r\n           box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n        border-radius: 1.33333em;\r\n              z-index: -1;\r\n-}\r\n-.crt-scan-area {\r\n-  width: 80ch;\r\n-  max-width: 80ch;\r\n-  height: 31.99992em;\r\n-  margin: 2.66667em;\r\n-  overflow-y: hidden;\r\n+}                        \r\n+.crt-scan-area {      \r\n+               width: 80ch;\r\n+           max-width: 80ch;\r\n+              height: 31.99992em;\r\n+              margin: 2.66667em;\r\n+          overflow-y: hidden;\r\n   white-space: pre-wrap;\r\n   font-family: monospace;\r\n }\r\n \r\n@@ -160,9 +160,8 @@\n   \r\n     text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);\r\n     text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);\r\n     text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);\r\n- \r\n   }\r\n   \r\n   \r\n   .crt-scan-area em {\r\n"
+                },
+                {
+                    "date": 1675340490132,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,29 +92,8 @@\n   to {\r\n            clip-path: polygon(0 calc(100% - .5em), 100% calc(100% - .5em), 0 100%, 0 100%);\r\n   }                   \r\n }                     \r\n-                       \r\n-.crt:before {\r\n-             content: \"\";\r\n-            position: absolute;\r\n-                 top: 0;\r\n-                left: 0;\r\n-              bottom: 0;\r\n-               right: 0;\r\n-          box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n-       border-radius: 1.33333em;\r\n-             z-index: -1;\r\n-}                        \r\n-.crt-scan-area {      \r\n-               width: 80ch;\r\n-           max-width: 80ch;\r\n-              height: 31.99992em;\r\n-              margin: 2.66667em;\r\n-          overflow-y: hidden;\r\n-  white-space: pre-wrap;\r\n-  font-family: monospace;\r\n-}\r\n \r\n \r\n \r\n   \r\n"
+                },
+                {
+                    "date": 1675340498931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -82,8 +82,37 @@\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n+\r\n+\r\n+\r\n+\r\n+                       \r\n+.crt:before {\r\n+  content: \"\";\r\n+ position: absolute;\r\n+      top: 0;\r\n+     left: 0;\r\n+   bottom: 0;\r\n+    right: 0;\r\n+box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n+border-radius: 1.33333em;\r\n+  z-index: -1;\r\n+}                        \r\n+.crt-scan-area {      \r\n+    width: 80ch;\r\n+max-width: 80ch;\r\n+   height: 31.99992em;\r\n+   margin: 2.66667em;\r\n+overflow-y: hidden;\r\n+white-space: pre-wrap;\r\n+font-family: monospace;\r\n+}\r\n+\r\n+\r\n+\r\n+\r\n .glitch {\r\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n"
+                },
+                {
+                    "date": 1675340510566,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,26 +69,9 @@\n           background: #141414;\r\n             overflow: hidden;\r\n              z-index: 3;\r\n }\r\n-.crt-scan-area::before {\r\n-             content: \" \";\r\n-             display: block;\r\n-            position: absolute;\r\n-                 top: 0;\r\n-                left: 0;\r\n-              bottom: 0;\r\n-               right: 0;\r\n-          background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n-             z-index: 2;\r\n-     background-size: 100% 2px, 3px 100%;\r\n-      pointer-events: none;\r\n-}\r\n \r\n-\r\n-\r\n-\r\n-                       \r\n .crt:before {\r\n   content: \"\";\r\n  position: absolute;\r\n       top: 0;\r\n@@ -110,9 +93,30 @@\n }\r\n \r\n \r\n \r\n+.crt-scan-area::before {\r\n+             content: \" \";\r\n+             display: block;\r\n+            position: absolute;\r\n+                 top: 0;\r\n+                left: 0;\r\n+              bottom: 0;\r\n+               right: 0;\r\n+          background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.04), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.04));\r\n+             z-index: 2;\r\n+     background-size: 100% 2px, 3px 100%;\r\n+      pointer-events: none;\r\n+}\r\n \r\n+\r\n+\r\n+\r\n+                       \r\n+\r\n+\r\n+\r\n+\r\n .glitch {\r\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n"
+                },
+                {
+                    "date": 1675340526952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -69,9 +69,8 @@\n           background: #141414;\r\n             overflow: hidden;\r\n              z-index: 3;\r\n }\r\n-\r\n .crt:before {\r\n   content: \"\";\r\n  position: absolute;\r\n       top: 0;\r\n@@ -81,8 +80,9 @@\n box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n border-radius: 1.33333em;\r\n   z-index: -1;\r\n }                        \r\n+\r\n .crt-scan-area {      \r\n     width: 80ch;\r\n max-width: 80ch;\r\n    height: 31.99992em;\r\n@@ -90,11 +90,8 @@\n overflow-y: hidden;\r\n white-space: pre-wrap;\r\n font-family: monospace;\r\n }\r\n-\r\n-\r\n-\r\n .crt-scan-area::before {\r\n              content: \" \";\r\n              display: block;\r\n             position: absolute;\r\n"
+                },
+                {
+                    "date": 1675340546199,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,8 @@\n box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);\r\n border-radius: 1.33333em;\r\n   z-index: -1;\r\n }                        \r\n-\r\n .crt-scan-area {      \r\n     width: 80ch;\r\n max-width: 80ch;\r\n    height: 31.99992em;\r\n@@ -103,17 +102,13 @@\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n+         \r\n \r\n \r\n \r\n \r\n-                       \r\n-\r\n-\r\n-\r\n-\r\n .glitch {\r\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n"
+                },
+                {
+                    "date": 1675340553414,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,13 +102,9 @@\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n-         \r\n \r\n-\r\n-\r\n-\r\n .glitch {\r\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n"
+                },
+                {
+                    "date": 1675340591881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -102,9 +102,8 @@\n              z-index: 2;\r\n      background-size: 100% 2px, 3px 100%;\r\n       pointer-events: none;\r\n }\r\n-\r\n .glitch {\r\n            clip-path: polygon(0 0, 100% 0, 100% 0.5em, 0 0.5em);\r\n            animation: glitch 10s linear infinite;\r\n            transform: translatex(0.1rem);\r\n"
+                },
+                {
+                    "date": 1675340641516,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -144,9 +144,9 @@\n    * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\r\n    * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n    */\r\n   /* With simplifications and modifications by Robert Bottomley. */\r\n-  \r\n+  /*\r\n   .crt:before {\r\n     background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n"
+                },
+                {
+                    "date": 1675340655635,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -150,9 +150,18 @@\n     background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n   }\r\n-  \r\n+  */\r\n+\r\n+\r\n+.a\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n   .crt-scan-area {\r\n     color: #cce;\r\n     color: #3f3;\r\n     color: #ffb000;\r\n"
+                },
+                {
+                    "date": 1675340670663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -153,9 +153,12 @@\n   }\r\n   */\r\n \r\n \r\n-.a\r\n+.amber:before {\r\n+  background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+ \r\n+}\r\n \r\n \r\n \r\n \r\n"
+                },
+                {
+                    "date": 1675340687450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -155,16 +155,17 @@\n \r\n \r\n .amber:before {\r\n   background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n- \r\n }\r\n \r\n+.amber:before {\r\n+background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+}\r\n \r\n \r\n \r\n \r\n-\r\n   .crt-scan-area {\r\n     color: #cce;\r\n     color: #3f3;\r\n     color: #ffb000;\r\n"
+                },
+                {
+                    "date": 1675340709029,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -161,11 +161,14 @@\n .amber:before {\r\n background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n+.amber:before {\r\n+  background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+}\r\n+  \r\n \r\n \r\n-\r\n   .crt-scan-area {\r\n     color: #cce;\r\n     color: #3f3;\r\n     color: #ffb000;\r\n"
+                },
+                {
+                    "date": 1675340714998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -157,9 +157,9 @@\n .amber:before {\r\n   background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n-.amber:before {\r\n+.green:before {\r\n background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n .amber:before {\r\n"
+                },
+                {
+                    "date": 1675340730979,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -114,9 +114,23 @@\n   }                   \r\n }                     \r\n \r\n \r\n+.amber:before {\r\n+  background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+}\r\n \r\n+.green:before {\r\n+background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+}\r\n+\r\n+.white:before {\r\n+  background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+}\r\n+\r\n+\r\n+\r\n+\r\n   \r\n   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */\r\n   /**\r\n    * AnderShell - Just a small CSS demo\r\n@@ -152,20 +166,8 @@\n     background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n   }\r\n   */\r\n \r\n-\r\n-.amber:before {\r\n-  background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-}\r\n-\r\n-.green:before {\r\n-background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-}\r\n-\r\n-.amber:before {\r\n-  background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n-}\r\n   \r\n \r\n \r\n   .crt-scan-area {\r\n"
+                },
+                {
+                    "date": 1675340736890,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,9 +115,9 @@\n }                     \r\n \r\n \r\n .amber:before {\r\n-            background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+           background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n .green:before {\r\n background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n"
+                },
+                {
+                    "date": 1675340806111,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -117,9 +117,9 @@\n           background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n .green:before {\r\n-         background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n+          background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n }\r\n \r\n .white:before {\r\n   background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);\r\n"
                 }
             ],
             "date": 1675295036550,
