@@ -150,8 +150,6 @@ font-family: monospace;
 .white .crt-scan-area em {
     background-color: #cce;
 }
-a:hover span{  color: #141414
-}
 a, a:visited {
           font-style: normal;
      text-decoration: none;
@@ -187,9 +185,11 @@ a:hover{
                color: #00a000;
 }
 .white span {
-               color: #8080a0;
+               color: #606080;
 }
-
+a:hover span{  
+               color: #141414
+}
   
   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */
   /**
