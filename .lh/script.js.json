@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1675350563535,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1675351676417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,9 @@\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n+console.log(data);\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n      id = document.getElementById('screen');\r\n      if (id) {\r\n"
                 }
             ],
             "date": 1675350563535,
