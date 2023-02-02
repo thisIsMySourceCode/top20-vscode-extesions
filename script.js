@@ -1,10 +1,3 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<title>TOP20 VsExtensions - Luciano</title>
-<script src="scripts.js"></script>
-<script>
-/*
 const 
 fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },
 fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},
@@ -68,21 +61,3 @@ fileRender = (data) => { data = fileParse(data)
    })
    observer.observe(document, {childList: true, subtree: true })
 }; fileRead('./FILES.BBS')
-*/
-</script>
-<link rel="stylesheet" href="./style.css" media="print" onload="this.media='all'">
-</head>
-<body>
-  <div class="overlay">
-  </div>
-  <div class="crt-bezel">
-    <div class="crt green">
-      <div class="overlay glitch">        
-      </div>
-      <div id="screen" class="crt-scan-area">
-    <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id="contact" href="https://github.com/thisIsMySourceCode"></a> 
-      </div>
-    </div>
-  </div>
-</body>
-</html>

@@ -1,0 +1,18 @@
+{
+    "sourceFile": "script.js",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1675350563535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1675350563535,
+            "name": "Commit-0",
+            "content": "const \r\nfileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },\r\nfileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},\r\nfileParse = (data) => { return data\r\n.replace(/&#8202;/gm,\" \")\r\n.replace(/(\\S[\\w.-]*)\\s+(.*)/gm,\"$1&#8202;$2\")\r\n.split(/\\r?\\n|\\r|\\n/g)\r\n.filter(Boolean)\r\n.map(e => {\r\n let  \r\n result = [];\r\n [ result[ 'link'        ] , \r\n   result[ 'description' ] \r\n ] =  e.split( \"&#8202;\", 2 )\r\n   result['name'] = result[ 'link' ]\r\n   .split('.')[1]\r\n   .replace(/-/gm,' ')\r\n   .split(' ')\r\n   .map (\r\n    w => w[0].toUpperCase() \r\n  + w.substring(1).toLowerCase()\r\n   )\r\n   .join(' ')\r\n   .replace(/vs\\s?code/i,'')\r\n   .trim()  \r\n   ;\r\n return result }\r\n)\r\n.sort((a, b) => {\r\n const \r\n keya = Object.keys(a)[2],\r\n keyb = Object.keys(b)[2]\r\n return keya.localeCompare(keyb) \r\n ||   a[keya].localeCompare(b[keyb])\r\n})\r\n},\r\nfileRender = (data) => { data = fileParse(data)\r\n   const \r\n   url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n   observer = new MutationObserver((mutations, obs) => {\r\n     const \r\n     id = document.getElementById('screen');\r\n     if (id) {\r\n       i =  0, len = data.length;\r\n       while (i < len) {\r\n         let \r\n         p = document.createElement('p') ,\r\n         a = document.createElement('a')\r\n         a.setAttribute('href'  , `${url}${data[i].link}`);\r\n         a.setAttribute('target', '_blank');\r\n         a.setAttribute('rel'   , 'noreferrer noopener nofollow');\r\n         a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n         p.appendChild(a)\r\n         p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`\r\n         id.appendChild(p)\r\n         i++\r\n       }\r\n       obs.disconnect()\r\n       return\r\n     }\r\n   })\r\n   observer.observe(document, {childList: true, subtree: true })\r\n}; fileRead('./FILES.BBS')"
+        }
+    ]
+}
