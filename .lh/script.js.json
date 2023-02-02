@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1675350563535,
@@ -28,6 +28,10 @@
                 {
                     "date": 1675355743039,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,6 +60,6 @@\n        obs.disconnect()\r\n        return\r\n      }\r\n    })\r\n-   observer.observe(document, {attributes:true, childList: true, subtree: true, c })\r\n+   observer.observe(document, {attributes:true, childList: true, subtree: true, ch })\r\n }; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675357491971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,9 +40,9 @@\n   url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n   id = document.getElementById('screen');\r\n   if (id) {\r\n     i =  0, len = data.length;\r\n-      while (i < len) {\r\n+     while (i < len) {\r\n         let \r\n         p = document.createElement('p') ,\r\n         a = document.createElement('a')\r\n         a.setAttribute('href'  , `${url}${data[i].link}`);\r\n"
                 }
             ],
             "date": 1675350563535,

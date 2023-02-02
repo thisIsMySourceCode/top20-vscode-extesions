@@ -1,4 +1,3 @@
-
 const 
 fileGet   = ( url) => { return fetch   (url) .then( response => response.text())        },
 fileRead  = ( url) => {        fileGet (url) .then( response => fileRender( response ) )},
@@ -35,64 +34,25 @@ fileParse = (data) => { return data
  ||   a[keya].localeCompare(b[keyb])
 })
 },
-fileRender = (data) => { data = fileParse(data)
-   console.log(data);
-   const 
-   url = 'https://marketplace.visualstudio.com/items?itemName='
-//   observer = new MutationObserver((mutations, obs) => {
-
-elementReady('#screen').then(
-    (data)=>{
-    
-const 
-     id = document.getElementById('screen');
-     if (id) {
-       i =  0, len = data.length;
-       while (i < len) {
-         let 
-         p = document.createElement('p') ,
-         a = document.createElement('a')
-         a.setAttribute('href'  , `${url}${data[i].link}`);
-         a.setAttribute('target', '_blank');
-         a.setAttribute('rel'   , 'noreferrer noopener nofollow');
-         a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`
-         p.appendChild(a)
-         p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`
-         id.appendChild(p)
-         i++
-       }
-       obs.disconnect()
-       return
-     }
-    })
-//   })
-//   observer.observe(document, {attributes:true, childList: true, subtree: true, characterData:true })
-}; 
-
-
-
-
-function elementReady(selector) {
-    return new Promise((resolve, reject) => {
-      let el = document.querySelector(selector);
-      if (el) {
-        resolve(el); 
-        return
-      }
-      new MutationObserver((mutationRecords, observer) => {
-        Array.from(document.querySelectorAll(selector)).forEach((element) => {
-          resolve(element);
-          observer.disconnect();
-        });
-      })
-        .observe(document.documentElement, {
-          childList: true,
-          subtree: true
-        });
-    });
+fileRender = (data) => { 
+  data = fileParse(data)
+  const 
+  url = 'https://marketplace.visualstudio.com/items?itemName=',
+  id = document.getElementById('screen');
+  if (id) {
+    i =  0, len = data.length;
+    while (i < len) {
+      let 
+      p = document.createElement('p') ,
+      a = document.createElement('a')
+      a.setAttribute('href'  , `${url}${data[i].link}`);
+      a.setAttribute('target', '_blank');
+      a.setAttribute('rel'   , 'noreferrer noopener nofollow');
+      a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`
+      p.appendChild(a)
+      p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`
+      id.appendChild(p)
+      i++
+    }
   }
-  
-  
-
-
-fileRead('./FILES.BBS')
+};fileRead('./FILES.BBS')

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 47,
+            "activePatchIndex": 50,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -196,6 +196,18 @@
                 {
                     "date": 1675355652512,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,10 +5,10 @@\n   <meta name=\"viewport\"    content=\"width=device-width, initial-scale=1.0\">\r\n   <meta name=\"robots\"      content=\"index, follow\">\t\r\n   <meta name=\"description\" content=\"TOP20 Vs Code Extensions - Old School Hercules Monitor CSS Experiment\"/>\r\n   <title>TOP20 VsExtensions - Luciano</title>\r\n-<script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n-<link rel=\"stylesheet\" href=\"./style.css\" media=\"print\" onload=\"this.media='all'\">\r\n+  <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n+  <link rel=\"stylesheet\" href=\"./style.css\" media=\"print\" onload=\"this.media='all'\">\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n"
+                },
+                {
+                    "date": 1675357266582,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,8 @@\n   <meta name=\"viewport\"    content=\"width=device-width, initial-scale=1.0\">\r\n   <meta name=\"robots\"      content=\"index, follow\">\t\r\n   <meta name=\"description\" content=\"TOP20 Vs Code Extensions - Old School Hercules Monitor CSS Experiment\"/>\r\n   <title>TOP20 VsExtensions - Luciano</title>\r\n-  <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n   <link rel=\"stylesheet\" href=\"./style.css\" media=\"print\" onload=\"this.media='all'\">\r\n </head>\r\n <body>\r\n   <div class=\"overlay\">\r\n"
+                },
+                {
+                    "date": 1675357272823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,6 +19,8 @@\n     <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n       </div>\r\n     </div>\r\n   </div>\r\n+<script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n+\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675357279438,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,6 @@\n       </div>\r\n     </div>\r\n   </div>\r\n <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n-\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1675293691270,
