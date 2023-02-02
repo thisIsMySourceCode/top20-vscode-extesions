@@ -70,6 +70,9 @@ body {
             overflow: hidden;
              z-index: 3;
 }
+
+
+
 .crt:before {
   content: "";
  position: absolute;
@@ -163,11 +166,6 @@ a, a:visited {
 .white a,.white a:visited {
                color: #cce;   
 }
-a:hover{
-               color: #141414;
-          font-style: normal;
-         text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-}
 .amber a:hover{
     background-color: #ffb000;
 }
@@ -190,6 +188,15 @@ a:hover{
 a:hover span{  
                color: #141414
 }
+
+
+
+a:hover{
+  color: #141414;
+font-style: normal;
+text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+}
+
   
   /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */
   /**
