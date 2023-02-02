@@ -59,4 +59,29 @@ fileRender = (data) => {
 const 
 id = document.getElementById('color')
 id.className = "crt " + color
-}; fileRead('./FILES.BBS')
+}; 
+
+const colors = ['amber','green','white']
+
+colors.forEach((col) => {
+    id = document.getElementById('button'+col) 
+    id.addEventListener("click", function(){color(col)}, false) 
+});
+
+
+
+/*
+currentTheme = localStorage.getItem('terminalcolor')
+if (currentTheme) {
+
+}
+function switchTheme(e) {
+    localStorage.setItem('theme', color)
+}
+
+
+*/
+
+
+
+fileRead('./FILES.BBS')
