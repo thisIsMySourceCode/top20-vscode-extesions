@@ -196,7 +196,7 @@ a:hover span{
 .white a:hover,
 a:hover{
   color: #141414;
-font-style: normal;
+/*font-style: normal;*/
 text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
 }
 
