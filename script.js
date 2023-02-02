@@ -69,6 +69,8 @@ colors.forEach((col) => {
 });
 
 
+if (colors.includes(window.location.hash)) { color(window.location.hash)}
+
 
 /*
 currentTheme = localStorage.getItem('terminalcolor')
