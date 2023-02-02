@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 50,
+            "activePatchIndex": 51,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -208,6 +208,10 @@
                 {
                     "date": 1675357279438,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,7 +20,6 @@\n       </div>\r\n     </div>\r\n   </div>\r\n <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n-\r\n </body>\r\n </html>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675359915587,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,10 @@\n     <div class=\"crt green\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n-    <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n+    <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a>\r\n+    Amber White Green \r\n       </div>\r\n     </div>\r\n   </div>\r\n <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n"
                 }
             ],
             "date": 1675293691270,
