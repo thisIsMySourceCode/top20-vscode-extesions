@@ -38,9 +38,13 @@ fileParse = (data) => { return data
 fileRender = (data) => { data = fileParse(data)
    console.log(data);
    const 
-   url = 'https://marketplace.visualstudio.com/items?itemName=',
-   observer = new MutationObserver((mutations, obs) => {
-     const 
+   url = 'https://marketplace.visualstudio.com/items?itemName='
+//   observer = new MutationObserver((mutations, obs) => {
+
+elementReady('#screen').then(
+    (data)=>{
+    
+const 
      id = document.getElementById('screen');
      if (id) {
        i =  0, len = data.length;
@@ -60,6 +64,35 @@ fileRender = (data) => { data = fileParse(data)
        obs.disconnect()
        return
      }
-   })
-   observer.observe(document, {attributes:true, childList: true, subtree: true, characterData:true })
-}; fileRead('./FILES.BBS')
+    })
+//   })
+//   observer.observe(document, {attributes:true, childList: true, subtree: true, characterData:true })
+}; 
+
+
+
+
+function elementReady(selector) {
+    return new Promise((resolve, reject) => {
+      let el = document.querySelector(selector);
+      if (el) {
+        resolve(el); 
+        return
+      }
+      new MutationObserver((mutationRecords, observer) => {
+        Array.from(document.querySelectorAll(selector)).forEach((element) => {
+          resolve(element);
+          observer.disconnect();
+        });
+      })
+        .observe(document.documentElement, {
+          childList: true,
+          subtree: true
+        });
+    });
+  }
+  
+  
+
+
+fileRead('./FILES.BBS')
