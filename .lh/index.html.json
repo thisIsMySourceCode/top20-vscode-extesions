@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 54,
+            "activePatchIndex": 55,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -224,6 +224,10 @@
                 {
                     "date": 1675360258041,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n     <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a>\r\n-    <Color: Amber White Green \r\n+    <pColor: Amber White Green \r\n       </div>\r\n     </div>\r\n   </div>\r\n <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n"
+                },
+                {
+                    "date": 1675360401027,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,9 +16,9 @@\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n     <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a>\r\n-    <p class=\"colors\">Color: <a href=\"Amber White Green</p> \r\n+    <p class=\"colors\">Color: <a href=\"\"Amber White Green</p> \r\n       </div>\r\n     </div>\r\n   </div>\r\n <script src=\"https://thisismysourcecode.github.io/top20-vscode-extesions/script.js\" async></script>\r\n"
                 }
             ],
             "date": 1675293691270,
