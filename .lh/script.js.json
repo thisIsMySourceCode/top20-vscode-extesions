@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1675350563535,
@@ -20,6 +20,14 @@
                 {
                     "date": 1675351870929,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,8 +35,10 @@\n  ||   a[keya].localeCompare(b[keyb])\r\n })\r\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n+    console.log(data);\r\n+\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n"
+                },
+                {
+                    "date": 1675355732334,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,9 @@\n  ||   a[keya].localeCompare(b[keyb])\r\n })\r\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n-    console.log(data);\r\n-\r\n+   console.log(data);\r\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n    observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n@@ -61,6 +60,6 @@\n        obs.disconnect()\r\n        return\r\n      }\r\n    })\r\n-   observer.observe(document, {childList: true, subtree: true })\r\n+   observer.observe(document, {attributeschildList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675355743039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,6 +60,6 @@\n        obs.disconnect()\r\n        return\r\n      }\r\n    })\r\n-   observer.observe(document, {attributes:true, childList: true, subtree: true, c })\r\n+   observer.observe(document, {attributes:true, childList: true, subtree: true, ch })\r\n }; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1675350563535,
