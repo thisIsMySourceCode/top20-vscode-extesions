@@ -51,7 +51,9 @@ fileRender = (data) => { data = fileParse(data)
          let 
          p = document.createElement('p') ,
          a = document.createElement('a')
-         a.setAttribute('href', `${url}${data[i].link}`);
+         a.setAttribute('href'  , `${url}${data[i].link}`);
+         a.setAttribute('target', '_blank');
+         a.setAttribute('rel'   , 'noreferrer noopener nofollow');
          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`
          p.appendChild(a)
          p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`

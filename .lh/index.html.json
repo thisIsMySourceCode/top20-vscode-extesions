@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -72,6 +72,50 @@
                 {
                     "date": 1675340615273,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,9 +70,9 @@\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n   <div class=\"crt-bezel\">\r\n-    <div class=\"crt\">\r\n+    <div class=\"crt amber\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n    <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n"
+                },
+                {
+                    "date": 1675342261238,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,8 +51,11 @@\n          let \r\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n+\r\n+         rel=\"noreferrer noopener\"\r\n+\r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n          p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`\r\n          id.appendChild(p)\r\n"
+                },
+                {
+                    "date": 1675342267267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,11 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n-         rel=\"noreferrer noopener\"\r\n+         a.setAttribute('href', `${url}${data[i].link}`);\r\n+         a.setAttribute('href', `${url}${data[i].link}`);\r\n+         \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n          p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`\r\n"
+                },
+                {
+                    "date": 1675342276120,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n+         a.setAttribute('target', `${url}${data[i].link}`);\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n-         a.setAttribute('href', `${url}${data[i].link}`);\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342281285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n          a.setAttribute('target', `${url}${data[i].link}`);\r\n-         a.setAttribute('href', `${url}${data[i].link}`);\r\n+         a.setAttribute('rel', `${url}${data[i].link}`);\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342293055,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,9 +52,9 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n-         a.setAttribute('target', `${url}${data[i].link}`);\r\n+         a.setAttribute('target', '`${url}${data[i].link}`');\r\n          a.setAttribute('rel', `${url}${data[i].link}`);\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n"
+                },
+                {
+                    "date": 1675342310115,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n-         a.setAttribute('target', '`${url}${data[i].link}`');\r\n-         a.setAttribute('rel', `${url}${data[i].link}`);\r\n+         a.setAttribute('target', 'target=\"_blank\"');\r\n+         a.setAttribute('rel', '`${url}${data[i].link}`');\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342362226,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n-         a.setAttribute('target', 'target=\"_blank\"');\r\n-         a.setAttribute('rel', '`${url}${data[i].link}`');\r\n+         a.setAttribute('target', '_blank\"');\r\n+         a.setAttribute('rel', 'rel=\"noreferrer noopener\"');\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342403893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,10 +52,10 @@\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n-         a.setAttribute('target', '_blank\"');\r\n-         a.setAttribute('rel', 'rel=\"noreferrer noopener\"');\r\n+         a.setAttribute('target', '_blank');\r\n+         a.setAttribute('rel', 'rel=\"noreferrer noopener nofollow\"');\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342410298,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -53,9 +53,9 @@\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n \r\n          a.setAttribute('target', '_blank');\r\n-         a.setAttribute('rel', 'rel=\"noreferrer noopener nofollow\"');\r\n+         a.setAttribute('rel', 'noreferrer noopener nofollow\"');\r\n          \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n"
+                },
+                {
+                    "date": 1675342418835,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,12 +51,11 @@\n          let \r\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n          a.setAttribute('href', `${url}${data[i].link}`);\r\n-\r\n          a.setAttribute('target', '_blank');\r\n-         a.setAttribute('rel', 'noreferrer noopener nofollow\"');\r\n-         \r\n+         a.setAttribute('rel', 'noreferrer noopener nofollow');\r\n+     \r\n \r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n          p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`\r\n"
+                },
+                {
+                    "date": 1675342430562,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,13 +50,11 @@\n        while (i < len) {\r\n          let \r\n          p = document.createElement('p') ,\r\n          a = document.createElement('a')\r\n-         a.setAttribute('href', `${url}${data[i].link}`);\r\n+         a.setAttribute('href'  , `${url}${data[i].link}`);\r\n          a.setAttribute('target', '_blank');\r\n-         a.setAttribute('rel', 'noreferrer noopener nofollow');\r\n-     \r\n-\r\n+         a.setAttribute('rel'   , 'noreferrer noopener nofollow');\r\n          a.innerHTML = `${data[i].name}<span>: ${data[i].description}</span>`\r\n          p.appendChild(a)\r\n          p.innerHTML=`<span>${String(i+1).padStart(2, '0')}.</span> ${p.innerHTML}`\r\n          id.appendChild(p)\r\n"
                 }
             ],
             "date": 1675293691270,
