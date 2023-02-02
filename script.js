@@ -69,7 +69,7 @@ colors.forEach((col) => {
 });
 
 
-if (colors.includes(window.location.hash)) { color(window.location.hash)}
+if (colors.includes(window.location.hash.slice(1))) { color(window.location.hash.slice(1))}
 
 
 /*
