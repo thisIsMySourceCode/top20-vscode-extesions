@@ -54,13 +54,5 @@ fileRender = (data) => {
       id.appendChild(p)
       i++
     }
-    p = documnet.createElement('p')
-    id.appendChild(p)
-    p = documnet.createElement('p')
-    a = document.createElement('a')
-    a.setAttribute('href'  , '#');
-    a.innerHTML = 'Amber'
-    p.appendChild(a)
-    id.appendChild(p)
   }
 };fileRead('./FILES.BBS')
