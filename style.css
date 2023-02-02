@@ -70,28 +70,25 @@ body {
             overflow: hidden;
              z-index: 3;
 }
-
-
-
 .crt:before {
-  content: "";
- position: absolute;
-      top: 0;
-     left: 0;
-   bottom: 0;
-    right: 0;
-box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);
-border-radius: 1.33333em;
-  z-index: -1;
+             content: "";
+            position: absolute;
+                 top: 0;
+                left: 0;
+              bottom: 0;
+               right: 0;
+          box-shadow: inset 0 0 5px 5px rgba(255, 255, 255, 0.1);
+       border-radius: 1.33333em;
+             z-index: -1;
 }                        
 .crt-scan-area {      
-    width: 80ch;
-max-width: 80ch;
-   height: 31.99992em;
-   margin: 2.66667em;
-overflow-y: hidden;
-white-space: pre-wrap;
-font-family: monospace;
+               width: 80ch;
+           max-width: 80ch;
+              height: 31.99992em;
+              margin: 2.66667em;
+          overflow-y: hidden;
+         white-space: pre-wrap;
+         font-family: monospace;
 }
 .crt-scan-area::before {
              content: " ";
@@ -128,15 +125,12 @@ font-family: monospace;
           background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
 }                     
 .amber .crt-scan-area {
-               color: #ffb000;
          text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);
 }
 .green .crt-scan-area {
-               color: #3f3;
          text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);
 }
 .white .crt-scan-area {
-               color: #cce;
          text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);
 }
 .crt-scan-area em {
@@ -144,40 +138,34 @@ font-family: monospace;
           font-style: normal;
          text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
 }
-.amber .crt-scan-area em {
-    background-color: #ffb000;
-}
-.green .crt-scan-area em {
-    background-color: #3f3;
-}
-.white .crt-scan-area em {
-    background-color: #cce;
-}
 a, a:visited {
           font-style: normal;
      text-decoration: none;
 }
+.amber .crt-scan-area,
 .amber a, .amber a:visited {
                color: #ffb000;   
 }
+.green .crt-scan-area,
 .green a,.green a:visited {
                color: #3f3;   
 }
-.white a,.white a:visited {
-               color: #cce;   
+.white .crt-scan-area,
+.white a,.white a:visited
+{
+              color: #cce;   
 }
-.amber a:hover{
-    background-color: #ffb000;
+.amber .crt-scan-area em, .amber a:hover{
+   background-color: #ffb000;
 }
-.green a:hover{
-    background-color: #3f3;
+.green .crt-scan-area em, .green a:hover {
+   background-color: #3f3;
 }
-.white a:hover{
-    background-color: #cce;
+.white .crt-scan-area em, .white a:hover{
+   background-color: #cce;
 }
-
 .amber span {
-               color: #996000;
+              color: #996000;
 }
 .green span {
                color: #00a000;
@@ -188,88 +176,10 @@ a, a:visited {
 a:hover span{  
                color: #141414
 }
-
-
-
 .amber a:hover,
 .green a:hover,
 .white a:hover,
 a:hover{
   color: #141414;
-/*font-style: normal;*/
 text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
 }
-
-
-
-  
-  /* From: https://anderse.wordpress.com/2014/04/18/css-and-javascript-retro-terminal-emulator-demo/ */
-  /**
-   * AnderShell - Just a small CSS demo
-   *
-   * Copyright (c) 2011-2013, Anders Evenrud <andersevenrud@gmail.com>
-   * All rights reserved.
-   * 
-   * Redistribution and use in source and binary forms, with or without
-   * modification, are permitted provided that the following conditions are met: 
-   * 
-   * 1. Redistributions of source code must retain the above copyright notice, this
-   *    list of conditions and the following disclaimer. 
-   * 2. Redistributions in binary form must reproduce the above copyright notice,
-   *    this list of conditions and the following disclaimer in the documentation
-   *    and/or other materials provided with the distribution. 
-   * 
-   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
-   * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
-   * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
-   * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
-   * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
-   * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
-   * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND
-   * ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-   * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
-   * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
-   */
-  /* With simplifications and modifications by Robert Bottomley. */
-  /*
-  .crt:before {
-    background: radial-gradient(ellipse at center, rgba(204, 204, 238, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba( 51, 255,  51, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-    background: radial-gradient(ellipse at center, rgba(255, 176,   0, 0.1) 0%, rgba(255, 255, 255, 0) 100%);
-  }
-  .crt-scan-area {
-    color: #cce;
-    color: #3f3;
-    color: #ffb000;
-  
-    text-shadow: 0 0 1px rgba(204, 204, 238, 0.8);
-    text-shadow: 0 0 1px rgba(51, 255, 51, 0.8);
-    text-shadow: 0 0 1px rgba(255, 176, 0, 0.8);
-  }
-  .crt-scan-area em {
-    color: #141414;
-  
-    background-color: #cce;
-    background-color: #3f3;
-    background-color: #ffb000;
-    font-style: normal;
-    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-  }
-  a,a:visited {
-    font-style: normal;
-    color: #ffb000;   
-    text-decoration:none;
-  }
-
-  a:hover{
-    color: #141414;
-    background-color: #ffb000;
-    font-style: normal;
-    text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
-  }
-  */
-
-  
-  
-  
-  
