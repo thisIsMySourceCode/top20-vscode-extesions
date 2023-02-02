@@ -190,11 +190,12 @@ a:hover span{
 }
 
 
-
-a:hover{
+.white a:hover,
+.green a:hover,
+.amber a:hover{
   color: #141414;
 font-style: normal;
-text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;
+/*text-shadow: 0.4389924193300864px 0 1px rgba(0,30,255,0.5), -0.4389924193300864px 0 1px rgba(255,0,80,0.3), 0 0 1px;*/
 }
 
   
