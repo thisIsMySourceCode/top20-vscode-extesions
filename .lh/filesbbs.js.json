@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 6,
             "patches": [
                 {
                     "date": 1675293321621,
@@ -12,6 +12,26 @@
                 {
                     "date": 1675293563844,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,5 +57,5 @@\n        return\r\n      }\r\n    })\r\n    observer.observe(document, {childList: true, subtree: true })\r\n-}; fileRead('./files.bbs')\n\\ No newline at end of file\n+}; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675356574698,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -56,6 +56,6 @@\n        obs.disconnect()\r\n        return\r\n      }\r\n    })\r\n-   observer.observe(document, {childList: true, subtree: true })\r\n+//   observer.observe(document, {childList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675356592230,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -35,10 +35,11 @@\n })\r\n },\r\n fileRender = (data) => { data = fileParse(data)\r\n    const \r\n-   url = 'https://marketplace.visualstudio.com/items?itemName=',\r\n-   observer = new MutationObserver((mutations, obs) => {\r\n+   url = 'https://marketplace.visualstudio.com/items?itemName='\r\n+\r\n+//   observer = new MutationObserver((mutations, obs) => {\r\n      const \r\n      id = document.getElementById('screen');\r\n      if (id) {\r\n        i =  0, len = data.length;\r\n@@ -55,7 +56,7 @@\n        }\r\n        obs.disconnect()\r\n        return\r\n      }\r\n-   })\r\n+//   })\r\n //   observer.observe(document, {childList: true, subtree: true })\r\n }; fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675356613028,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,5 +58,36 @@\n        return\r\n      }\r\n //   })\r\n //   observer.observe(document, {childList: true, subtree: true })\r\n-}; fileRead('./FILES.BBS')\n\\ No newline at end of file\n+}; \r\n+\r\n+\r\n+\r\n+function elementReady(selector) {\r\n+  return new Promise((resolve, reject) => {\r\n+    let el = document.querySelector(selector);\r\n+    if (el) {\r\n+      resolve(el); \r\n+      return\r\n+    }\r\n+    new MutationObserver((mutationRecords, observer) => {\r\n+      // Query for elements matching the specified selector\r\n+      Array.from(document.querySelectorAll(selector)).forEach((element) => {\r\n+        resolve(element);\r\n+        //Once we have resolved we don't need the observer anymore.\r\n+        observer.disconnect();\r\n+      });\r\n+    })\r\n+      .observe(document.documentElement, {\r\n+        childList: true,\r\n+        subtree: true\r\n+      });\r\n+  });\r\n+}\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+fileRead('./FILES.BBS')\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1675356748554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,14 @@\n    const \r\n    url = 'https://marketplace.visualstudio.com/items?itemName='\r\n \r\n //   observer = new MutationObserver((mutations, obs) => {\r\n-     const \r\n+\r\n+elementReady('#screen').then(\r\n+ (data)=>{\r\n+ \r\n+ \r\n+  const \r\n      id = document.getElementById('screen');\r\n      if (id) {\r\n        i =  0, len = data.length;\r\n        while (i < len) {\r\n@@ -56,8 +61,11 @@\n        }\r\n        obs.disconnect()\r\n        return\r\n      }\r\n+\r\n+    }     \r\n+)\r\n //   })\r\n //   observer.observe(document, {childList: true, subtree: true })\r\n }; \r\n \r\n@@ -70,9 +78,8 @@\n       resolve(el); \r\n       return\r\n     }\r\n     new MutationObserver((mutationRecords, observer) => {\r\n-      // Query for elements matching the specified selector\r\n       Array.from(document.querySelectorAll(selector)).forEach((element) => {\r\n         resolve(element);\r\n         //Once we have resolved we don't need the observer anymore.\r\n         observer.disconnect();\r\n"
+                },
+                {
+                    "date": 1675356763861,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,8 @@\n     }\r\n     new MutationObserver((mutationRecords, observer) => {\r\n       Array.from(document.querySelectorAll(selector)).forEach((element) => {\r\n         resolve(element);\r\n-        //Once we have resolved we don't need the observer anymore.\r\n         observer.disconnect();\r\n       });\r\n     })\r\n       .observe(document.documentElement, {\r\n"
                 }
             ],
             "date": 1675293321621,
