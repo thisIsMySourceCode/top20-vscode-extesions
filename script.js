@@ -56,34 +56,21 @@ fileRender = (data) => {
     }
   }
 },color = (color) => {
-const 
-id = document.getElementById('color')
-id.className = "crt " + color
-}; 
-
-const colors = ['amber','green','white']
-
-colors.forEach((col) => {
+  const 
+  id = document.getElementById('color')
+  id.className = "crt " + color
+  localStorage.setItem('terminalcolor', color)
+}, colors = ['amber','green','white']
+   colors.forEach((col) => {
     id = document.getElementById('button'+col) 
     id.addEventListener("click", function(){color(col)}, false) 
 });
-
-
 if (colors.includes(window.location.hash.slice(1))) { color(window.location.hash.slice(1))}
-
-
-/*
-currentTheme = localStorage.getItem('terminalcolor')
-if (currentTheme) {
-
-}
-function switchTheme(e) {
-    localStorage.setItem('theme', color)
-}
-
-
-*/
-
-
-
-fileRead('./FILES.BBS')
+else {
+       currentTheme = localStorage.getItem('terminalcolor')
+    if (currentTheme) {
+        if (colors.includes(currentTheme)) {
+           color(currentTheme) 
+        }
+    }
+}; fileRead('./FILES.BBS')
