@@ -179,11 +179,10 @@ a:hover{
 .white a:hover{
     background-color: #cce;
 }
-span {
+
+.amber span {
                color: #996000;
 }
-
-
 .green span {
                color: #00b000;
 }
