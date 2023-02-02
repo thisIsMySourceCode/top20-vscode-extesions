@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 28,
+            "activePatchIndex": 29,
             "patches": [
                 {
                     "date": 1675293691270,
@@ -120,6 +120,10 @@
                 {
                     "date": 1675342596766,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,13 +72,13 @@\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n   <div class=\"crt-bezel\">\r\n-    <div class=\"crt amber\">\r\n+    <div class=\"crt green\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n-   <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n+    <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n       </div>\r\n     </div>\r\n   </div>\r\n </body>\r\n"
+                },
+                {
+                    "date": 1675342836858,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -72,9 +72,9 @@\n <body>\r\n   <div class=\"overlay\">\r\n   </div>\r\n   <div class=\"crt-bezel\">\r\n-    <div class=\"crt green\">\r\n+    <div class=\"crt white\">\r\n       <div class=\"overlay glitch\">        \r\n       </div>\r\n       <div id=\"screen\" class=\"crt-scan-area\">\r\n     <em> My Top 20 A-Z Visual Studio Code Extensions </em><a id=\"contact\" href=\"https://github.com/thisIsMySourceCode\"></a> \r\n"
                 }
             ],
             "date": 1675293691270,
